@@ -1,0 +1,9 @@
+# --- HERRAMIENTAS DE LENGUAJE ---
+deep-translator
+spacy>=3.0
+
+# --- CEREBROS (MODELOS) ---
+# Español
+https://github.com/explosion/spacy-models/releases/download/es_core_news_sm-3.7.0/es_core_news_sm-3.7.0.tar.gz
+# Inglés
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.0/en_core_web_sm-3.7.0.tar.gz
