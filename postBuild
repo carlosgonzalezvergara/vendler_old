@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+python -m pip install --upgrade pip
+
+# Comprobación: que spaCy y los modelos se pueden cargar
+python - << 'PY'
+import spacy
+
+for m in ("es_core_news_sm", "en_core_web_sm"):
+    try:
+        spacy.load(m)
+        print(f"[OK] spaCy model loaded: {m}")
+    except Exception as e:
+        print(f"[WARN] Could not load {m}: {e}")
+PY
